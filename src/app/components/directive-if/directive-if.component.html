@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Practicing if directive:</h1>
+
+  <p>Click on button to toggle the <strong>courses list</strong></p>
+
+  <ul *ngIf="showCourses">
+    <li>
+      <span>
+        Angular course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        React Course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        Vue Course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        Laravel Course
+      </span>
+    </li>
+  </ul>
+
+  <ul *ngIf="!showCourses">
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+  </ul>
+
+  <button (click)="toggleCourses()">
+    <span *ngIf="showCourses">
+      Hide Courses
+    </span>
+
+    <span *ngIf="!showCourses">
+      Show Courses
+    </span>
+  </button>
+</div>
