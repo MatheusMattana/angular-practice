@@ -6,6 +6,5 @@ import { DirectiveIfRoutingModule } from './directive-if-routinh.module';
 @NgModule({
   declarations: [DirectiveIfComponent],
   imports: [CommonModule, DirectiveIfRoutingModule],
-  exports: [DirectiveIfComponent],
 })
 export class DirectiveIfModule {}
