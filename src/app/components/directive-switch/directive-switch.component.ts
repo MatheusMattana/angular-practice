@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./directive-switch.component.scss'],
 })
 export class DirectiveSwitchComponent {
-  actualAnimal = 'dog';
+  actualAnimal = '';
 }
