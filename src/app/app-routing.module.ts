@@ -4,19 +4,26 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'diretiva-if',
+    redirectTo: 'if-directive',
     pathMatch: 'full',
   },
   {
-    path: 'diretiva-if',
+    path: 'if-directive',
     loadChildren: () =>
       import('./components/directive-if/directive-if.module').then(
         (m) => m.DirectiveIfModule
       ),
   },
   {
+    path: 'for-directive',
+    loadChildren: () =>
+      import('./components/directive-for/directive-for.module').then(
+        (m) => m.DirectiveForModule
+      ),
+  },
+  {
     path: '**',
-    redirectTo: '/diretiva-if',
+    redirectTo: '/if-directive',
   },
 ];
 
