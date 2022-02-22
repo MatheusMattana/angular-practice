@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Practicing switch directive:</h1>
+
+  <p>Click on button to switch the <strong>animal picture</strong></p>
+
+  <button (click)="actualAnimal = 'dog'"
+    class="btn btn-primary mx-2" type="button">
+    Dog
+  </button>
+
+  <button (click)="actualAnimal = 'bear'"
+    class="btn btn-primary mx-2" type="button">
+    Bear
+  </button>
+
+  <button (click)="actualAnimal = 'walrus'"
+    class="btn btn-primary mx-2" type="button">
+    Walrus
+  </button>
+
+  <div [ngSwitch]="actualAnimal" class="mt-5">
+    <img *ngSwitchCase="'dog'" src="https://picsum.photos/id/1062/400/300" alt="dog image"
+      class="rounded d-block img-fluid">
+
+    <img *ngSwitchCase="'bear'" src="https://picsum.photos/id/1020/400/300" alt="dog image"
+      class="rounded d-block img-fluid">
+
+    <img *ngSwitchCase="'walrus'" src="https://picsum.photos/id/1084/400/300" alt="dog image"
+      class="rounded d-block img-fluid">
+  </div>
+
+</div>

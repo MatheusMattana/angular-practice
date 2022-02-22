@@ -21,6 +21,7 @@ const routes: Routes = [
         (m) => m.DirectiveForModule
       ),
   },
+  { path: 'switch-directive', loadChildren: () => import('./components/directive-switch/directive-switch.module').then(m => m.DirectiveSwitchModule) },
   {
     path: '**',
     redirectTo: '/if-directive',
