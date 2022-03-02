@@ -1,4 +1,3 @@
-import { DirectiveNgClassComponent } from './components/directive-ng-class/directive-ng-class.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -11,28 +10,28 @@ const routes: Routes = [
   {
     path: 'if-directive',
     loadChildren: () =>
-      import('./components/directive-if/directive-if.module').then(
+      import('./pages/directive-if/directive-if.module').then(
         (m) => m.DirectiveIfModule
       ),
   },
   {
     path: 'for-directive',
     loadChildren: () =>
-      import('./components/directive-for/directive-for.module').then(
+      import('./pages/directive-for/directive-for.module').then(
         (m) => m.DirectiveForModule
       ),
   },
   {
     path: 'switch-directive',
     loadChildren: () =>
-      import('./components/directive-switch/directive-switch.module').then(
+      import('./pages/directive-switch/directive-switch.module').then(
         (m) => m.DirectiveSwitchModule
       ),
   },
   {
     path: 'ng-class-directive',
     loadChildren: () =>
-      import('./components/directive-ng-class/directive-ng-class.module').then(
+      import('./pages/directive-ng-class/directive-ng-class.module').then(
         (m) => m.DirectiveNgClassModule
       ),
   },
