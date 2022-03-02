@@ -1,3 +1,4 @@
+import { NgElseDirective } from './../../directives/ng-else/ng-else.directive';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,6 +14,7 @@ import { CustomColorHighlightDirective } from 'src/app/directives/custom-color-h
     YellowBackgroundDirective,
     HighlightOnHoverDirective,
     CustomColorHighlightDirective,
+    NgElseDirective,
   ],
   imports: [CommonModule, DirectiveCustomRoutingModule],
 })

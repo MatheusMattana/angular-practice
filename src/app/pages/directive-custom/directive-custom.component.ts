@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directive-custom',
   templateUrl: './directive-custom.component.html',
-  styleUrls: ['./directive-custom.component.scss']
+  styleUrls: ['./directive-custom.component.scss'],
 })
-export class DirectiveCustomComponent implements OnInit {
+export class DirectiveCustomComponent {
+  showCourses = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  toggleCourses() {
+    this.showCourses = !this.showCourses;
   }
-
 }

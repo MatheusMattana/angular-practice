@@ -32,3 +32,71 @@
     On hover, the element will be highlighted with a custom color
   </p>
 </section>
+
+<section class="container">
+  <h1>Practicing custom ngElse directive</h1>
+
+  <p>Click on button to toggle the <strong>courses list</strong></p>
+
+  <ul *ngIf="showCourses">
+    <li>
+      <span>
+        Angular course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        React Course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        Vue Course
+      </span>
+    </li>
+
+    <li>
+      <span>
+        Laravel Course
+      </span>
+    </li>
+  </ul>
+
+  <ul *ngElse="showCourses">
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+
+    <li>
+      <span>
+        ----- ------
+      </span>
+    </li>
+  </ul>
+
+  <button type="button" class="btn btn-primary" (click)="toggleCourses()">
+    <span *ngIf="showCourses">
+      Hide Courses
+    </span>
+
+    <span *ngElse="showCourses">
+      Show Courses
+    </span>
+  </button>
+</section>
