@@ -35,6 +35,7 @@ const routes: Routes = [
         (m) => m.DirectiveNgClassModule
       ),
   },
+  { path: 'custom-directive', loadChildren: () => import('./pages/directive-custom/directive-custom.module').then(m => m.DirectiveCustomModule) },
   {
     path: '**',
     redirectTo: '/if-directive',
