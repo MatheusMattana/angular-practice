@@ -1,17 +1,34 @@
 <h1 class="mb-4 p-4">Practicing custom directives:</h1>
 
 <section class="container p-4">
-  <h2 yellowBackground>Yellow background</h2>
+  <h2 yellowBackground class="p-2">Yellow background</h2>
 
-  <p yellowBackground>Paragraph with yellow background because of the custom directive</p>
+  <p yellowBackground class="p-2">Paragraph with yellow background because of the custom directive
+  </p>
 
   <button yellowBackground class="btn">Button too</button>
 </section>
 
 <section class="container p-4">
-  <h2 highlightOnHover>Highlights element on hover</h2>
+  <h2 highlightOnHover class="p-2">Highlights element on hover</h2>
 
-  <p highlightOnHover>
+  <p highlightOnHover class="p-2">
     On hover, the element will be highlighted
+  </p>
+</section>
+
+<section class="container p-4">
+  <h2 customColorHighlight
+    [defaultColor]="'#E9DAC1'"
+    [highlightColor]="'#54BAB9'"
+    class="p-2">
+    Highlights element with custom color on hover
+  </h2>
+
+  <p customColorHighlight
+    [defaultColor]="'#E5E3C9'"
+    [highlightColor]="'#94B49F'"
+    class="p-2">
+    On hover, the element will be highlighted with a custom color
   </p>
 </section>
