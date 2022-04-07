@@ -50,6 +50,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'add-course-service',
+    loadChildren: () =>
+      import('./pages/service-add-courses/service-add-courses.module').then(
+        (m) => m.ServiceAddCoursesModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: '/if-directive',
   },

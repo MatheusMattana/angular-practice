@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h1>Practicing the use of services methods:</h1>
+
+  <p>Now we can add courses to the list with a service method</p>
+
+  <input type="text" class="form-control" #courseInput>
+
+  <button (click)="addCourse(courseInput.value)" class="btn btn-primary mt-4">
+    Add course!
+  </button>
+
+  <p class="mt-4">The courses below are listed using an Angular service</p>
+
+  <ul>
+    <li *ngFor="let course of courses">
+      <span>{{ course }}</span>
+    </li>
+  </ul>
+</div>
