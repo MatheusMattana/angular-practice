@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipeExamplesComponent implements OnInit {
   book: any = {
-    title: 'Programação Web com Node.js: Completo, do Front-end ao Back-end',
+    title: 'PrOgramaÇão WEB com Node.js: COMPLETO, do Front-end aO BACK-END',
     rating: 4.5654,
     pages: 356,
     price: 14.99,
