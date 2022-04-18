@@ -56,6 +56,7 @@ const routes: Routes = [
         (m) => m.ServiceAddCoursesModule
       ),
   },
+  { path: 'pipe-examples', loadChildren: () => import('./pages/pipe-examples/pipe-examples.module').then(m => m.PipeExamplesModule) },
   {
     path: '**',
     redirectTo: '/if-directive',

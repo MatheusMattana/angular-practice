@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Practicing angular pipes:</h1>
+
+  <p>Book</p>
+
+  <ul>
+    <li>
+      <p>Title: {{ book.title | uppercase }}</p>
+    </li>
+
+    <li>
+      <p>Stars: {{ book.rating | number:'1.1' }}</p>
+    </li>
+
+    <li>
+      <p>Pages: {{ book.pages | currency:'BRL':true }}</p>
+    </li>
+
+    <li>
+      <p>Release date: {{ book.releaseDate | date:'dd-MM-yyyy' }}</p>
+    </li>
+
+    <li>
+      <p>Book: {{ book | json }}</p>
+    </li>
+  </ul>
+
+</div>
